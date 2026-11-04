@@ -212,4 +212,4 @@ Test-Path C:\PortfolioTest
 - [x] Commands also written as text, not only in images
 - [x] Problems and untested items recorded honestly
 - [x] Computer and account names are real and left visible; network identifiers are redacted
-- [ ] Uploaded to GitHub folder and linked from the main README
+- [x] Uploaded to GitHub folder
