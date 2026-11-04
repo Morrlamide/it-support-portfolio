@@ -41,7 +41,7 @@ Get-LocalGroupMember Administrators
 - **What they do:** `Get-LocalUser` lists every local account and whether it is enabled. `Get-LocalGroupMember Administrators` shows who has administrator rights.
 - **What I saw:** the built-in `Administrator` account is disabled (`Enabled False`), only two accounts are in the Administrators group, and `TestUser` does not exist yet.
 
-![Baseline: local users and Administrators group members](images/01-baseline.png)
+![Baseline: local users and Administrators group members](Attachments/01-baseline.png)
 
 ## Steps
 
@@ -59,7 +59,7 @@ net localgroup administrators
 - **What I expected:** a local account called `TestUser`, in the Users group but not in Administrators.
 - **What happened:** "The command completed successfully." `TestUser` appears in the Users group and is not in the Administrators group.
 
-![Creating TestUser and checking group membership](images/02-create-testuser.png)
+![Creating TestUser and checking group membership](Attachments/02-create-testuser.png)
 
 ### Step 2: Create the locked folder and a test file
 ```powershell
@@ -86,7 +86,7 @@ icacls 'C:\PortfolioTest\Shared'
 > [!WARNING]
 > Run `/inheritance:r` before you test as another user. A new folder inherits its parent's permissions, so without this step a standard user can still get in. See Problem 2.
 
-![Creating the locked folder, fixing the path typo and removing inheritance](images/03-create-locked-folder.png)
+![Creating the locked folder, fixing the path typo and removing inheritance](Attachments/03-create-locked-folder.png)
 
 ### Step 3: Confirm which account I am testing as
 ```powershell
@@ -96,14 +96,14 @@ whoami
 - **What I expected:** `morris\testuser`.
 - **What happened:** the output was `morris\testuser`. This window is a normal (non-administrator) PowerShell session, so the tests that follow are done as TestUser, not as an administrator.
 
-![whoami confirming the session is TestUser](images/04-whoami-testuser.png)
+![whoami confirming the session is TestUser](Attachments/04-whoami-testuser.png)
 
 ### Step 4: TestUser tries to open the locked folder
 - **Action:** signed in as TestUser, opened File Explorer, browsed to `C:\PortfolioTest` and opened `Shared`.
 - **What I expected:** access blocked.
 - **What happened:** Windows blocked access with "You don't currently have permission to access this folder." The Continue button asks for administrator approval, which a standard user does not have.
 
-![TestUser blocked from the Shared folder](images/05-testuser-blocked.png)
+![TestUser blocked from the Shared folder](Attachments/05-testuser-blocked.png)
 
 ### Step 5: Grant read-only access
 ```powershell
@@ -116,11 +116,11 @@ icacls 'C:\PortfolioTest\Shared' /grant 'TestUser:(OI)(CI)(R)'
   - Trying to create a new file in the folder was denied: Windows showed "Destination Folder Access Denied".
   - I typed in Notepad but did not save, so saving a change to `readme.txt` was not tested (see "What I could not test or verify").
 
-![Granting read permission to TestUser](images/06-grant-read.png)
+![Granting read permission to TestUser](Attachments/06-grant-read.png)
 
-![TestUser opening readme.txt](images/07-read-file-opens.png)
+![TestUser opening readme.txt](Attachments/07-read-file-opens.png)
 
-![Creating a new file is denied](images/08-create-file-blocked.png)
+![Creating a new file is denied](Attachments/08-create-file-blocked.png)
 
 ### Step 6: Grant modify access
 ```powershell
@@ -130,9 +130,9 @@ icacls 'C:\PortfolioTest\Shared' /grant:r 'TestUser:(OI)(CI)(M)'
 - **What I expected:** TestUser can now add items to `Shared`.
 - **What happened:** TestUser created a new folder inside `Shared`.
 
-![Granting modify permission to TestUser](images/09-grant-modify.png)
+![Granting modify permission to TestUser](Attachments/09-grant-modify.png)
 
-![TestUser creating a new folder in Shared](images/10-create-folder-allowed.png)
+![TestUser creating a new folder in Shared](Attachments/10-create-folder-allowed.png)
 
 ## Expected vs actual
 | Test (as TestUser) | Expected | Actual | Tested? |
@@ -170,9 +170,9 @@ Test-Path C:\PortfolioTest
 - **What I removed:** the TestUser account and the `C:\PortfolioTest` folder with everything in it.
 - **How I confirmed it was gone:** `Get-LocalUser` no longer lists TestUser, and `Test-Path C:\PortfolioTest` returned `False`.
 
-![Deleting TestUser and the test folder](images/11-cleanup.png)
+![Deleting TestUser and the test folder](Attachments/11-cleanup.png)
 
-![Test-Path returns False](images/12-cleanup-verified.png)
+![Test-Path returns False](Attachments/12-cleanup-verified.png)
 
 ## What I could not test or verify
 - **Saving an edit to `readme.txt` under Read-only access.** I typed in Notepad but did not save. Read access is confirmed, and creating a new file in the folder was denied. Whether Windows would block saving a change to the existing file is not verified. TestUser was deleted during cleanup, so I could not go back and check.
@@ -207,7 +207,7 @@ Test-Path C:\PortfolioTest
 | `Test-Path <path>` | Returns `True` or `False` for whether a path exists |
 
 ## Evidence checklist
-- [x] Screenshots numbered, no spaces in file names, stored in `images/`
+- [x] Screenshots numbered, no spaces in file names, stored in `Attachments/`
 - [x] No IPs, MAC addresses or Wi-Fi names appear in the screenshots
 - [x] Commands also written as text, not only in images
 - [x] Problems and untested items recorded honestly
