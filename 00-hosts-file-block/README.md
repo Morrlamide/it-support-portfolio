@@ -191,4 +191,4 @@ None recorded for this task.
 - [x] Commands and entries also written as text, not only in images
 - [x] Steps without a screenshot, and untested items, recorded honestly
 - [x] Computer and account names are real and left visible; network identifiers are redacted
-- [ ] Uploaded to GitHub folder
+- [x] Uploaded to GitHub folder
