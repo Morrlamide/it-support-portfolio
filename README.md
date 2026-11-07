@@ -11,7 +11,7 @@ Hands-on IT support practice projects, built on my own Windows laptop. Each proj
 |---|---|---|---|
 | 00 | [Hosts file website block](00-hosts-file-block/) | Editing the hosts file to block a site | Complete |
 | 01 | [Windows accounts and permissions](01-windows-accounts-permissions/) | Creating a standard user, locking a folder, granting read then modify access with `icacls` | Complete |
-| 02 | Network troubleshooting | Diagnosing connection faults with command-line tools | Planned |
+| 02 | [Network troubleshooting](02-network-troubleshooting/) | Diagnosing a wrong DNS server and a disabled adapter with command-line tools | Complete |
 | 03 | Slow PC and logs | Using Task Manager, Resource Monitor and Event Viewer to find causes | Planned |
 | 04 | Linux basics in WSL | Core Linux commands | Planned |
 | 05 | Simulated help desk | Tickets and end-user guides built from Projects 1 to 4 | Planned |
