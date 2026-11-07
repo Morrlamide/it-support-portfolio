@@ -263,4 +263,4 @@ None recorded for this task.
 - [x] My own public IP address never appears
 - [x] Commands also written as text, not only in images
 - [x] No problems recorded, and limits of the evidence stated
-- [ ] Uploaded to GitHub folder
+- [x] Uploaded to GitHub folder
