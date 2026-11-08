@@ -20,7 +20,8 @@ Hands-on IT support practice projects, built on my own Windows laptop. Each proj
 
 - [Technical Support Fundamentals](https://coursera.org/verify/5SW1SR8W9W01) (Google, completed 21 Sep 2026)
 - [The Bits and Bytes of Computer Networking](https://coursera.org/verify/HGQGQ2ZYE6KG) (Google, completed 24 Oct 2026)
-- Google IT Support Professional Certificate: in progress (Courses 3 to 6)
+- [Operating Systems and You: Becoming a Power User](https://www.coursera.org/account/accomplishments/verify/QHF1N1A53VA7) (Google, completed 7 Nov 2026)
+- Google IT Support Professional Certificate: in progress (Courses 4 to 6)
 
 ## Contact
 
