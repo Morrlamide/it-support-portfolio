@@ -14,13 +14,13 @@ Hands-on IT support practice projects, built on my own Windows laptop. Each proj
 | 02 | [Network troubleshooting](02-network-troubleshooting/) | Diagnosing a wrong DNS server and a disabled adapter with command-line tools | Complete |
 | 03 | Slow PC and logs | Using Task Manager, Resource Monitor and Event Viewer to find causes | Planned |
 | 04 | Linux basics in WSL | Core Linux commands | Planned |
-| 05 | Simulated help desk | Tickets and end-user guides built from Projects 1 to 4 | Planned |
+| 05 | [Simulated help desk tickets](05-help-desk-tickets/) | Tickets and end-user guides written from my hands-on projects | Complete |
 
 ## Certificates
 
 - [Technical Support Fundamentals](https://coursera.org/verify/5SW1SR8W9W01) (Google, completed 21 Sep 2026)
 - [The Bits and Bytes of Computer Networking](https://coursera.org/verify/HGQGQ2ZYE6KG) (Google, completed 24 Oct 2026)
-- [Operating Systems and You: Becoming a Power User](https://www.coursera.org/account/accomplishments/verify/QHF1N1A53VA7) (Google, completed 7 Nov 2026)
+- [Operating Systems and You: Becoming a Power User](https://www.coursera.org/verify/QHF1N1A53VA7) (Google, completed 7 Nov 2026)
 - Google IT Support Professional Certificate: in progress (Courses 4 to 6)
 
 ## Contact
