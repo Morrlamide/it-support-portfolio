@@ -55,4 +55,4 @@ A help desk is judged on its records as much as its fixes. Here I turned the han
 - [x] Commands and results match the project READMEs
 - [x] Fictional people and company clearly labelled as Simulated Work
 - [x] Limits stated in each ticket
-- [ ] Uploaded to GitHub folder
+- [x] Uploaded to GitHub folder
