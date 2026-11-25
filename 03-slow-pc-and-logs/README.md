@@ -169,4 +169,4 @@ None recorded for this task.
 - [x] No IP addresses, MAC addresses or Wi-Fi names appear in the screenshots
 - [x] Steps without a screenshot, and untested items, recorded honestly
 - [x] No problems recorded, and limits of the evidence stated
-- [ ] Uploaded to GitHub folder
+- [x] Uploaded to GitHub folder
