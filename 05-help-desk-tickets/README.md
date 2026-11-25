@@ -25,6 +25,7 @@ A help desk is judged on its records as much as its fixes. Here I turned the han
 | [SIM-002](ticket-002-folder-access.md) | New starter needs access to a shared folder | Access and permissions | Medium | Resolved | [Project 01](../01-windows-accounts-permissions/README.md) |
 | [SIM-003](ticket-003-websites-wont-open.md) | "I can't open any website" | Network | High | Resolved | [Project 02](../02-network-troubleshooting/README.md) |
 | [SIM-004](ticket-004-no-network.md) | "My laptop says there is no network" | Network | High | Resolved | [Project 02](../02-network-troubleshooting/README.md) |
+| [SIM-005](ticket-005-slow-pc.md) | "My laptop is slow" | Performance | Medium | Resolved | [Project 03](../03-slow-pc-and-logs/README.md) |
 
 ## End-user guides
 - [Websites won't open: quick checks before you call IT](guide-websites-wont-open.md)
