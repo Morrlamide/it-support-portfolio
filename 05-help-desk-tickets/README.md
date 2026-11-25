@@ -11,10 +11,10 @@ tags:
 # Project 05: Simulated help desk tickets and end-user guides
 
 > [!NOTE]
-> **Simulated Work.** The company, the requesters and their requests are fictional. The commands, results and screenshots are real and come from my own laptop in Projects 00, 01 and 02. No real employer, client or user data is used.
+> **Simulated Work.** The company, the requesters and their requests are fictional. The commands, results and screenshots are real and come from my own laptop in Projects 00, 01, 02 and 03. No real employer, client or user data is used.
 
 ## What this project is
-A help desk is judged on its records as much as its fixes. Here I turned the hands-on work from my earlier projects into the paperwork a support team produces: four tickets written the way I would write them on the job, and two short guides for non-technical users.
+A help desk is judged on its records as much as its fixes. Here I turned the hands-on work from my earlier projects into the paperwork a support team produces: five tickets written the way I would write them on the job, and two short guides for non-technical users.
 
 **Fictional company:** Corestack, a small office with a handful of Windows laptops and PCs and no dedicated IT staff, so one support person handles everything.
 
